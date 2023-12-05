@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfEntityCRUD.InsertPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEntityCRUD"
+        mc:Ignorable="d"
+        Title="InsertPage" Height="300" Width="300">
+    <Grid>
+        <TextBlock x:Name="nameTxtBlock" HorizontalAlignment="Left" Margin="60,104,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="genderTxtBlock" HorizontalAlignment="Left" Margin="60,187,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Margin="170,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="genderComboBox" HorizontalAlignment="Left" Margin="170,187,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBox.Items>
+                <ComboBoxItem>Male</ComboBoxItem>
+                <ComboBoxItem>Female</ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+        <Button x:Name="insertBtn" Content="Insert" HorizontalAlignment="Center" Margin="0,254,0,0" VerticalAlignment="Top" Click="insertBtn_Click"/>
+
+    </Grid>
+</Window>
